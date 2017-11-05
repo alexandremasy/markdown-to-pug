@@ -6,7 +6,7 @@ describe('Inline', function()
   it('Bold', function()
   {
     let src = '**This is bold text**';
-    let result = 'p\n\tstrong\n\t\tThis is bold text';
+    let result = 'p\n\tstrong This is bold text';
 
     assert.equal(md2pug.render(src), result);
   });
@@ -14,7 +14,7 @@ describe('Inline', function()
   it('Italic', function()
   {
     let src = '*This is italic text*';
-    let result = 'p\n\tem\n\t\tThis is italic text';
+    let result = 'p\n\tem This is italic text';
 
     assert.equal(md2pug.render(src), result);
   });
@@ -22,7 +22,7 @@ describe('Inline', function()
   it('Strikethrough', function()
   {
     let src = '~~Strikethrough~~';
-    let result = 'p\n\ts\n\t\tStrikethrough';
+    let result = 'p\n\ts Strikethrough';
 
     assert.equal(md2pug.render(src), result);
   });

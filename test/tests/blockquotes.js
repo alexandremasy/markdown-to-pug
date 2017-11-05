@@ -7,7 +7,7 @@ describe('Blockquotes', function()
   it('Simple', function()
   {
     let src = '> one level';
-    let result = 'blockquote\n\tp\n\t\tone level';
+    let result = 'blockquote\n\tp one level';
 
     assert.equal(md2pug.render(src), result);
   });
@@ -15,7 +15,7 @@ describe('Blockquotes', function()
   it('NestedCompact', function()
   {
     let src = '>> two level';
-    let result = 'blockquote\n\tblockquote\n\t\tp\n\t\t\ttwo level';
+    let result = 'blockquote\n\tblockquote\n\t\tp two level';
 
     assert.equal(md2pug.render(src), result);
   });
@@ -23,7 +23,7 @@ describe('Blockquotes', function()
   it('NestedSpaced', function()
   {
     let src = '> > > spaced';
-    let result = 'blockquote\n\tblockquote\n\t\tblockquote\n\t\t\tp\n\t\t\t\tspaced';
+    let result = 'blockquote\n\tblockquote\n\t\tblockquote\n\t\t\tp spaced';
 
     assert.equal(md2pug.render(src), result);
   });
