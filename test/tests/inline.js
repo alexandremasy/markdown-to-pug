@@ -18,4 +18,12 @@ describe('Inline', function()
 
     assert.equal(md2pug.render(src), result);
   });
+
+  it('Strikethrough', function()
+  {
+    let src = '~~Strikethrough~~';
+    let result = 'p\n\ts\n\t\tStrikethrough';
+
+    assert.equal(md2pug.render(src), result);
+  });
 });
