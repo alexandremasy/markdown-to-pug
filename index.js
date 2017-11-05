@@ -1,8 +1,12 @@
-var blockquotes1 = '> one line';
-var blockquotes2 = '>> ...by using additional greater-than signs right next to each other...';
-var blockquotes3 = '> > > ...or with spaces between arrows.';
+var md = `# h1 Heading 8-)
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading`;
 
 md2pug = new (require('./lib/markdown-to-pug'))();
-// console.log(md2pug.render(blockquotes1));
+let ret = md2pug.render(md);
+console.log(ret);
 
 module.exports = md2pug;
