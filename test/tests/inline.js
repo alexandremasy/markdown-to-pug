@@ -26,4 +26,12 @@ describe('Inline', function()
 
     assert.equal(md2pug.render(src), result);
   });
+
+  it('Code', function()
+  {
+    let src = 'Inline `code`';
+    let result = 'p Inline \n\tcode code';
+
+    assert.equal(md2pug.render(src), result);
+  });
 });
