@@ -4,7 +4,7 @@
   "description": "Markdown to PugJS converter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://gitlab.com/alexandremasy/markdown-to-pug#README",
   "dependencies": {
     "markdown-it": "^8.4.0"
+  },
+  "dev-dependencies": {
+    "mocha": "^4.0.1"
   }
 }
