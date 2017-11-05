@@ -1,9 +1,7 @@
-var md = `**This is bold text**
-
-__This is bold text__`;
+var md = `**This is italic text**`;
 
 md2pug = new (require('./lib/markdown-to-pug'))();
 let ret = md2pug.render(md);
-console.log(0, ret);
+console.log(ret);
 
 module.exports = md2pug;

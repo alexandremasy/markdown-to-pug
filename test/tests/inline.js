@@ -10,4 +10,12 @@ describe('Inline', function()
 
     assert.equal(md2pug.render(src), result);
   });
+
+  it('Italic', function()
+  {
+    let src = '*This is italic text*';
+    let result = 'p\n\tem\n\t\tThis is italic text';
+
+    assert.equal(md2pug.render(src), result);
+  });
 });
