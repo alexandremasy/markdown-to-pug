@@ -2,21 +2,29 @@ var assert = require('assert');
 
 describe('Blockquotes', function()
 {
+  const md2pug = new (require('../../lib/markdown-to-pug'))();
+
   it('Simple', function()
   {
-    //   > Blockquotes can also be nested...
-    assert.equal(-1, [1,2,3].indexOf(4));
+    let src = '> one level';
+    let result = 'blockquote\n\tp\n\t\tone level';
+
+    assert.equal(md2pug.render(src), result);
   });
 
   it('NestedCompact', function()
   {
-    // >> ...by using additional greater-than signs right next to each other...
-    assert.equal(-1, [1,2,3].indexOf(4));
+    let src = '>> two level';
+    let result = 'blockquote\n\tblockquote\n\t\tp\n\t\t\ttwo level';
+
+    assert.equal(md2pug.render(src), result);
   });
 
   it('NestedSpaced', function()
   {
-    // > > > ...or with spaces between arrows.
-    assert.equal(-1, [1,2,3].indexOf(4));
+    let src = '> > > spaced';
+    let result = 'blockquote\n\tblockquote\n\t\tblockquote\n\t\t\tp\n\t\t\t\tspaced';
+
+    assert.equal(md2pug.render(src), result);
   });
 });

@@ -5,5 +5,3 @@ global.expect = chai.expect;
 chai.config.includeStack = true;
 
 process.env.NODE_ENV = 'test';
-
-global.markdownToPug = require('../lib/markdown-to-pug');

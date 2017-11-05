@@ -3,6 +3,6 @@ var blockquotes2 = '>> ...by using additional greater-than signs right next to e
 var blockquotes3 = '> > > ...or with spaces between arrows.';
 
 md2pug = new (require('./lib/markdown-to-pug'))();
-md2pug.render(blockquotes3);
+// console.log(md2pug.render(blockquotes1));
 
 module.exports = md2pug;
