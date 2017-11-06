@@ -15,7 +15,7 @@ describe('Lists', function()
   it('Ordered - Offset', function()
   {
     let src = '56. item 1\n2. item 2\n3. item 3';
-    let result = 'ol(start=56)\n\tli\n\t\tp item 1\n\tli\n\t\tp item 2\n\tli\n\t\tp item 3';
+    let result = 'ol(start="56")\n\tli\n\t\tp item 1\n\tli\n\t\tp item 2\n\tli\n\t\tp item 3';
 
     assert.equal(md2pug.render(src), result);
   });
