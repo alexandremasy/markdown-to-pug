@@ -5,5 +5,5 @@ image: node:latest
 test:
   stage: test
   script:
-    - npm install
-    - npm test
+    - yarn install
+    - yarn test
