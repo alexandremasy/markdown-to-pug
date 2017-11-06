@@ -1,4 +1,4 @@
-var md = `[link text](http://google.com)`;
+var md = `![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")`;
 
 md2pug = new (require('./lib/markdown-to-pug'))();
 let ret = md2pug.render(md);

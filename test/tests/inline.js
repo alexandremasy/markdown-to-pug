@@ -50,4 +50,12 @@ describe('Inline', function()
 
     assert.equal(md2pug.render(src), result);
   });
+
+  it('Images', function()
+  {
+    let src = '![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")';
+    let result = 'p\n\timg(src="https://octodex.github.com/images/stormtroopocat.jpg",alt="",title="The Stormtroopocat") Stormtroopocat';
+
+    assert.equal(md2pug.render(src), result);
+  });
 });
