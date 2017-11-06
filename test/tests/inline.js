@@ -34,4 +34,20 @@ describe('Inline', function()
 
     assert.equal(md2pug.render(src), result);
   });
+
+  it('Link Text', function()
+  {
+    let src = '[link text](http://google.com)';
+    let result = 'p\n\ta(href="http://google.com") link text';
+
+    assert.equal(md2pug.render(src), result);
+  });
+
+  it('Link Title', function()
+  {
+    let src = '[link with title](http://google.com "Google!")';
+    let result = 'p\n\ta(href="http://google.com",title="Google!") link with title';
+
+    assert.equal(md2pug.render(src), result);
+  });
 });
