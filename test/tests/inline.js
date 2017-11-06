@@ -1,4 +1,4 @@
-var assert = require('assert');
+const assert = require('assert');
 const md2pug = new (require('../../lib/markdown-to-pug'))();
 
 describe('Inline', function()

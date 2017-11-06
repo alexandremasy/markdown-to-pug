@@ -1,9 +1,8 @@
-var assert = require('assert');
+const assert = require('assert');
+const md2pug = new (require('../../lib/markdown-to-pug'))();
 
 describe('Headings', function()
 {
-  const md2pug = new (require('../../lib/markdown-to-pug'))();
-
   let hs = [
     {'name': 'h1', 'md': "# h1 heading", 'pug':"h1 h1 heading"},
     {'name': 'h2', 'md': "## h2 heading", 'pug':"h2 h2 heading"},

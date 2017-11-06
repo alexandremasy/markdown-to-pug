@@ -1,9 +1,8 @@
-var assert = require('assert');
+const assert = require('assert');
+const md2pug = new (require('../../lib/markdown-to-pug'))();
 
 describe('Lists', function()
 {
-  const md2pug = new (require('../../lib/markdown-to-pug'))();
-
   it('Ordered', function()
   {
     let src = '1. item 1\n2. item 2\n3. item 3';
