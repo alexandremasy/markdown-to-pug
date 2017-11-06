@@ -4,7 +4,7 @@
   "description": "Markdown to PugJS converter",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   "dependencies": {
     "markdown-it": "^8.4.0"
   },
-  "dev-dependencies": {
+  "devDependencies": {
     "mocha": "^4.0.1"
   }
 }
