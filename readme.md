@@ -1,9 +1,7 @@
-[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://github.com/alexandremasy/markdown-to-pug)
+[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/alexandremasy/markdown-to-pug)
 
 # Markdown To PugJS
 > Convert your Markdown to PugJS
-
-
 
 ---
 
