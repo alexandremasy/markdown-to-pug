@@ -74,6 +74,9 @@ yarn add markdown-to-pug
 | ------ | ---------------- |
 | String | The PugJS String |
 
+### .md
+
+The instance of markdown-it. Use it to add plugin support.
 
 
 ## Example
@@ -85,5 +88,36 @@ var md = `![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg
 var pug = md2pug.render(md);
 ```
 
+### Mixin support
 
+With the folliwing PugJS mixin
 
+```pugjs
+mixin list
+  ul
+    li first
+    li second
+    li third    
+```
+
+```md
+<!-- +list -->
+```
+
+### Layout support
+
+```md
+<!-- extends layout.pug -->
+
+<!-- block content -->
+# Title
+```
+
+will yield to
+
+```pugjs
+extend layout.pug
+
+block content
+  h1 Title
+```
