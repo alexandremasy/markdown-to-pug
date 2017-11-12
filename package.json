@@ -4,7 +4,8 @@
   "description": "Markdown to PugJS converter",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "bundle": "browserify lib/markdown-to-pug.js -s MarkdownToPug -o ../pages/lib/bundle.js"
   },
   "repository": {
     "type": "git",

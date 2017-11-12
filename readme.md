@@ -3,6 +3,7 @@
 # Markdown To PugJS
 > Convert your Markdown to PugJS
 
+<https://alexandremasy.github.io/markdown-to-pug/>
 ---
 
 ## Why?
