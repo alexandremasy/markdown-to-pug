@@ -11,7 +11,45 @@ body
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: #364143;
 }
+
+.intro
+{
+  max-width: 600px;
+  padding: 24px;
+}
+
+.intro h1
+{
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+
+.intro blockquote
+{
+  padding: 0;
+  margin: 0;
+  font-size: 21px;
+  opacity: .3;
+}
+
+.intro p
+{
+  font-size: 16px;
+  line-height: 1.58;
+}
+.intro a
+{
+  font-size: 16px;
+  color: #1AA9D5;
+}
+.intro a:hover
+{
+  opacity: .8;
+}
+
 
 .cm-s-mbo.CodeMirror,
 .cm-s-mbo .CodeMirror-gutters

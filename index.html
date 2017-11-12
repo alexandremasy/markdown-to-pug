@@ -26,6 +26,15 @@
       2. PugJS
       3. HTML
      -->
+    <div class="intro">
+      <h1>Markdown To Pug</h1>
+      <blockquote>Convert your Markdown to PugJS</blockquote>
+
+      <p>Sometimes you like the simplicity of markdown to just express whatever you want to say, but want to keep control on how it will look like. This is what it is about, get control over the output while adding simple ways to take advantage of the PugJS functionalities like mixins and layout.</p>
+
+      <a href="https://github.com/alexandremasy/markdown-to-pug">Getting started with this converter</a>
+    </div>
+
 
     <div class="editors">
       <div class="editors__editor markdown">
@@ -45,15 +54,6 @@
         </header>
         <div class="editor__content">
           <textarea name="pugEditor" id="pugEditor"></textarea>
-        </div>
-      </div>
-
-      <div class="editors__editor html">
-        <header class="editor__header">
-          <h1>HTML</h1>
-        </header>
-        <div class="editor__content">
-          <textarea name="htmlEditor" id="htmlEditor"></textarea>
         </div>
       </div>
     </div>
@@ -99,14 +99,6 @@
             lineWrapping: true
           });
 
-          this.htmlEditor = CodeMirror.fromTextArea(document.getElementById("htmlEditor"), {
-            mode: 'text/html',
-            theme: this.theme,
-            readOnly: true,
-            lineNumbers: true,
-            selectionPointer: true,
-            lineWrapping: true
-          });
 
           this.setContent( this.markdownEditor.doc.getValue() );
           this.markdownEditor.on('change', onMarkdownChange.bind(this));
