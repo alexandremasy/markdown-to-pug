@@ -1,6 +1,6 @@
 {
   "name": "markdown-to-pug",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Markdown to PugJS converter",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/alexandremasy/markdown-to-pug.git"
+    "url": "git://github.com/alexandremasy/markdown-to-pug.git"
   },
   "author": "Alexandre Masy <hello@alexandremasy.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/alexandremasy/markdown-to-pug/issues"
+    "url": "https://github.com/alexandremasy/markdown-to-pug/issues"
   },
-  "homepage": "https://gitlab.com/alexandremasy/markdown-to-pug#README",
+  "homepage": "https://github.com/alexandremasy/markdown-to-pug#README",
   "dependencies": {
     "markdown-it": "^8.4.0"
   },
