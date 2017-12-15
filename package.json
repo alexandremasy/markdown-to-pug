@@ -1,6 +1,6 @@
 {
   "name": "markdown-to-pug",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Markdown to PugJS converter",
   "main": "index.js",
   "scripts": {
