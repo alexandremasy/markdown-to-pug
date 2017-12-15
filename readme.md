@@ -3,7 +3,7 @@
 
 <https://alexandremasy.github.io/markdown-to-pug/>
 
-[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/alexandremasy/markdown-to-pug) [![NPM version](https://img.shields.io/npm/v/markdown-to-pug.svg?style=flat)](https://www.npmjs.org/package/markdown-to-pug)
+[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/alexandremasy/markdown-to-pug)
 ---
 
 ## Why?
