@@ -1,5 +1,5 @@
 const assert = require('assert');
-const md2pug = new (require('../../lib/markdown-to-pug'))();
+const md2pug = new (require('../../lib/markdown-to-pug'))({space:'\t'});
 
 describe('Blockquotes', function()
 {
