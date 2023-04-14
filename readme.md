@@ -112,7 +112,7 @@ mixin list
 
 <!-- block content -->
 # Title
-  <!-- include paragraph.pug -->
+<!-- include paragraph.pug -->
 
 ```
 
@@ -123,5 +123,5 @@ extend layout.pug
 
 block content
   h1 Title
-    include paragraph.pug
+  include paragraph.pug
 ```
